@@ -1,0 +1,22 @@
+{
+  "name": "image-tag",
+  "version": "1.0.0",
+  "description": "Processes passed image buffer (sorry, no streams at this point due to limiations of the underlaying operations), detects faces on the image, adds perceptual hash, and phashBinary (can be used for image similarity matching)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AVVS/image-tag.git"
+  },
+  "keywords": [
+    "image"
+  ],
+  "author": "Vitaly Aminev <v@aminev.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AVVS/image-tag/issues"
+  },
+  "homepage": "https://github.com/AVVS/image-tag"
+}
