@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/AVVS/image-tag/issues"
   },
-  "homepage": "https://github.com/AVVS/image-tag"
+  "homepage": "https://github.com/AVVS/image-tag",
+  "dependencies": {
+    "hex-to-binary": "^1.0.1",
+    "mkdirp": "^0.5.0",
+    "neo-async": "^0.6.3",
+    "node-uuid": "^1.4.3",
+    "opencv": "git://github.com/peterbraden/node-opencv.git#e65202575a59ac81176140eaae591197b9c69d40",
+    "phash-image": "git://github.com/arkcore/phash-image.git"
+  }
 }
