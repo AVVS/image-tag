@@ -31,6 +31,7 @@ function ImageTag(options, done) {
 
     var opts = this.options = _.defaults(options || {}, {
         face: true,
+        size: true,
         faceProfiles: false,
         phash: true,
         phashBinary: true,
@@ -69,7 +70,7 @@ ImageTag.prototype.detect = function (imageBuffer, next) {
                 return callback();
             }
 
-            detectFace(imageBuffer, options.faceProfiles, function detectFaceCallback(err, faceData) {
+            detectFace(imageBuffer, options, function detectFaceCallback(err, faceData) {
                 if (err) {
                     return callback(err);
                 }

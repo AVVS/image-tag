@@ -25,7 +25,8 @@ var imageTag = new ImageTag({
     faceProfiles: false, // you can pass paths to custom xml haar cascades, that will be used to detect faces. In fact you can detect smth other than a face here
     phash: true, // determines whether we need to calculate phash
     phashBinary: true, // should we calculat it?
-    face: true // determines whether we need to detect face
+    face: true, // determines whether we need to detect face
+    size: true // do we need to report size? Add width, height to the response
 });
 
 // works only with png and jp(e)g images, so if you need to do this with other formats
@@ -42,6 +43,8 @@ imageTag.detect(imageBuffer, function (err, data) {
             width: Number,
             height: Number
         },
+        width: Number,
+        height: Number,
         hasFace: Boolean,
         phash: String, // 72-byte hex string
         phashBinary: [Number] // array of numbers, contains position of each 1 in the binary format of phash hex string
