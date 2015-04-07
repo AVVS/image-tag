@@ -4,7 +4,7 @@ Outputs perceptual hash and face objects that are present on the image;
 Requires phash, cimg, imagemagick and opencv to be installed.
 It must be noted that due to the limitation of phash, which only accepts
 file paths, we must have access to some folder, where we can write tmp files.
-By default module uses `os.tmp() + '/image-tag-' + pkg.version` directory to store files,
+By default module uses `os.tmpdir() + '/image-tag-' + pkg.version` directory to store files,
 and cleans them up after they had been processed. If you want to speed up processing and only
 pay the price of copying memory (which is, of course, still not ideal) - create ramdisk and use it
 
