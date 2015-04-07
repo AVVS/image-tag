@@ -85,7 +85,7 @@ ImageTag.prototype.detect = function (imageBuffer, next) {
                 return callback();
             }
 
-            detectPhash(imageBuffer, options.tmpDir, function detectPhashCallback(err, phashData) {
+            detectPhash(imageBuffer, options, function detectPhashCallback(err, phashData) {
                 if (err) {
                     return callback(err);
                 }
