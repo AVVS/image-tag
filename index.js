@@ -35,7 +35,7 @@ function ImageTag(options, done) {
         faceProfiles: false,
         phash: true,
         phashBinary: true,
-        tmpDir: path.resolve(os.tmp(), pkg.name, pkg.version)
+        tmpDir: path.resolve(os.tmpdir(), pkg.name, pkg.version)
     });
 
     if (!opts.face && !opts.phash) {
