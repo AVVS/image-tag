@@ -1,6 +1,6 @@
 {
   "name": "image-tag",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Processes passed image buffer (sorry, no streams at this point due to limiations of the underlaying operations), detects faces on the image, adds perceptual hash, and phashBinary (can be used for image similarity matching)",
   "main": "index.js",
   "scripts": {
