@@ -1,6 +1,6 @@
 {
   "name": "image-tag",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Processes passed image buffer (sorry, no streams at this point due to limiations of the underlaying operations), detects faces on the image, adds perceptual hash, and phashBinary (can be used for image similarity matching)",
   "main": "index.js",
   "scripts": {
@@ -21,10 +21,10 @@
   "homepage": "https://github.com/AVVS/image-tag",
   "dependencies": {
     "hex-to-binary": "^1.0.1",
-    "mkdirp": "^0.5.0",
-    "neo-async": "^0.6.3",
+    "mkdirp": "^0.5.1",
+    "neo-async": "^1.2.1",
     "node-uuid": "^1.4.3",
-    "opencv": "git://github.com/peterbraden/node-opencv.git#e65202575a59ac81176140eaae591197b9c69d40",
-    "phash-image": "git://github.com/arkcore/phash-image.git"
+    "opencv": "peterbraden/node-opencv.git#3fdb9c5ad5598ac4b06d55715643bcf348ef71ab",
+    "phash-image": "^3.2.0"
   }
 }
